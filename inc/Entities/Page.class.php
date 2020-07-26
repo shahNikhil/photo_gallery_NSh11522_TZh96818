@@ -40,9 +40,14 @@ class Page
         </html>
     <?php
     }
-
-    // this method will display the add entry form
-    static function addEntryForm()
+    // this method will display the login form
+    static function displayLoginForm(){
+    ?>
+        <p>login page</p>
+    <?php
+    }
+    // this method will display the registration form
+    static function displayRegistrationForm()
     {
     ?>
         <div class="container">
@@ -51,7 +56,7 @@ class Page
                     <strong>Registration</strong>
                 </div>
                 <div class="card-body jumbotron font-weight-bold mb-0">
-                    <form id="login" action="indexadd.php" method="POST">
+                    <form id="login" action="registration_handler.php" method="POST">
 
                         <div class="form-row">
                             <div class="form-group col-md-6">
@@ -101,7 +106,7 @@ class Page
 
                             <h3 align="center">Note : click on the login! if already registered.</h3>
                             <p align="center">
-                                <button class="btn btn-primary" type="submit"><a class="text-white" href="login.html">Login</a></button>
+                                <button class="btn btn-primary" type="submit"><a class="text-white" href="login.php">Login</a></button>
                             </p>
                         </fieldset>
                     </form>
