@@ -134,6 +134,34 @@ class Page
                 </div>
             </div>
         </div>
+    <?php
+    }
+
+    //this method handles the photo uploaded by the user to gallery!!
+    static function Uploadphoto()
+    {
+    ?>
+        <div class="login-form">
+            <form id="login" action="photoinfoadd.php" enctype="multipart/form-data" method="POST">
+
+                <section id="info_menu">
+
+                    <div class="custom-file mb-3">
+                        <input type="file" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea input id="description" name="description" type="text" rows="5" placeholder="Write Something about Your Photo"></textarea>
+                    </div>
+
+                    <div class="form-group">
+
+                        <button type="submit" class="btn btn-primary btn-block" name="Registerphoto">GO!!!</button>
+                    </div>
+                </section>
+            </form>
+        </div>
 <?php
     }
 }
