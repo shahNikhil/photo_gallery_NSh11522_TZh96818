@@ -5,7 +5,7 @@ class Page
 
     //Set the title of your page!
     static $title = "PhotoGallery";
-
+    static $subTitle = "";
     // this method will display the top part of the page
     static function header($title)
     {
@@ -17,15 +17,17 @@ class Page
             <title><?php echo $title; ?></title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="inc/css/login.css">
         </head>
 
         <body>
             <div class="jumbotron text-center">
-                <h1>Photo gallery</h1>
-                <h4>Please fill the form to register</h4>
+                <h1><?php echo self::$title; ?></h1>
+                <h4><?php echo self::$subTitle; ?></h4>
             </div>
         <?php
     }
@@ -41,9 +43,28 @@ class Page
     <?php
     }
     // this method will display the login form
-    static function displayLoginForm(){
+    static function displayLoginForm()
+    {
     ?>
-        <p>login page</p>
+        <div class="login-form">
+            <form action="/examples/actions/confirmation.php" method="post">
+                <h2 class="text-center">Log in</h2>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="username" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="password" required="required">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                </div>
+                <div class="clearfix">
+                    <a href="#" class="float-right">Forgot Password?</a>
+                </div>
+            </form>
+            <p class="text-center"><a href="registration.php">Create an Account</a></p>
+        </div>
+
     <?php
     }
     // this method will display the registration form
