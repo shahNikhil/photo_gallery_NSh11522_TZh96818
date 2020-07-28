@@ -12,3 +12,11 @@ create table users (
 	address VARCHAR(255),
 	password VARCHAR(250)
 ) Engine=InnoDB;
+
+create table photos (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(50),
+	file_path VARCHAR(50),
+	description VARCHAR(100),
+	FOREIGN KEY (userid) REFERENCES users (id) ON DELETE CASCADE ON UPDATE CASCADE
+) Engine=InnoDB;
