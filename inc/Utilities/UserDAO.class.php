@@ -1,6 +1,6 @@
 <?php
 
-class UserDAO   {
+class UserDAO {
 
     // Create a member to store the PDO agent
     private static $db;
@@ -38,7 +38,7 @@ class UserDAO   {
     }
 
     // get a user detail
-    static function getUser(string $userName)  {
+    static function getUser(string $userName) {
         // you know the drill
         $sql = "SELECT * FROM users WHERE username=:user";
         self::$db->query($sql);
@@ -46,7 +46,6 @@ class UserDAO   {
         self::$db->execute();
         
         return self::$db->singleResult();
-
     }
 
     // get multiple users detail
@@ -55,7 +54,6 @@ class UserDAO   {
         //you know the drill
         $sql = "SELECT * FROM users";
         self::$db->query($sql);
-        self::$db->bind(":user",$userName);
         self::$db->execute();
         
         return self::$db->resultSet();

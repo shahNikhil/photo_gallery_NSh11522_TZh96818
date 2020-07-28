@@ -9,10 +9,10 @@ require_once("inc/Utilities/LoginManager.class.php");
 require_once("inc/Utilities/PDOAgent.class.php");
 require_once("inc/Utilities/UserDAO.class.php");
 
-Page::$subTitle = "Upload your photo and write a short description on it here";
+Page::$subTitle = "Photo Detail Page"; //TODO: make it be the file name of the photo
 Page::header("PhotoGallery");
 
-Page::Uploadphoto();
+// View the photo in bigger view
 
 Page::footer();
 ?>
