@@ -47,7 +47,7 @@ class Page
     {
     ?>
         <div class="login-form">
-            <form action="/examples/actions/confirmation.php" method="post">
+            <form action="photo_list.php" method="post">
                 <h2 class="text-center">Log in</h2>
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="username" required="required">
