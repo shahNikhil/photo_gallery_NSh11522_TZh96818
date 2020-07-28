@@ -12,7 +12,7 @@ class User {
     public function getName() {
         return $this->name;
     }
-    public function getFile_path() {
+    public function getFilepath() {
         return $this->file_path;
     }
     public function getDescription() {
@@ -23,7 +23,7 @@ class User {
     public function setName($name){
         $this->name = $name;
     }
-	public function setFile_path($file_path){
+	public function setFilepath($file_path){
 		$this->file_path = $file_path;
 	}
 	public function setDescription($description){
