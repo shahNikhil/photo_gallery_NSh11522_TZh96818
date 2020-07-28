@@ -14,7 +14,7 @@ if (!empty($_POST['username'])) {
         session_start();
         
         //Set the user to logged in
-        $_SESSION['loggedin'] = $authUser->getUserName();
+        $_SESSION['loggedin'] = $authUser->getId();
 
         header("Location: photo_list.php");
     } else {
