@@ -1,6 +1,6 @@
 <?php
 
-class User {
+class Photo {
 
     //Properties
     private $id = 0;

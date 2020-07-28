@@ -1,0 +1,3 @@
+[28-Jul-2020 22:39:53 UTC] PHP Fatal error:  Cannot declare class User, because the name is already in use in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Photo.class.php on line 3
+[28-Jul-2020 22:39:53 UTC] PHP Stack trace:
+[28-Jul-2020 22:39:53 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_upload.php:0
