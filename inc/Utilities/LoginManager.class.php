@@ -21,10 +21,10 @@ class LoginManager  {
         // Else
             //The user is not logged in
             //Destroy any session just in case            
-            session_destroy();
+
 
             //Send them back to the login pages using header
-            //header("Location: ../../login.php");
+            header("Location: ../../login.php");
 
             //return false
             return false;

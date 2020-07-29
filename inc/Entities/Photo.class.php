@@ -7,6 +7,7 @@ class Photo {
     private $name = '';
     private $file_path = '';
     private $description = '';
+    private $user_id =0;
 
     //Getter
     public function getName() {
@@ -18,7 +19,10 @@ class Photo {
     public function getDescription() {
         return $this->description;
     }
-
+    public function getUser_id()
+    {
+        return $this->user_id;
+    }
     //Setter
     public function setName($name){
         $this->name = $name;
@@ -29,6 +33,14 @@ class Photo {
 	public function setDescription($description){
 		$this->description = $description;
 	}
+    public function setUser_id($user_id)
+    {
+        $this->user_id = $user_id;
+    }
+ 
+
+
+
 }
 
 ?>

@@ -38,11 +38,12 @@ class UserDAO {
     }
 
     // get a user detail
-    static function getUser(string $userName) {
+    static function getUser(String $userName) {
         // you know the drill
-        $sql = "SELECT * FROM users WHERE username=:user";
+        $sql = "SELECT * FROM users WHERE username=:u;";
         self::$db->query($sql);
-        self::$db->bind(":user",$userName);
+        self::$db->bind(':u',$userName);
+   
         self::$db->execute();
         
         return self::$db->singleResult();

@@ -47,19 +47,16 @@ class Page
     {
     ?>
         <div class="login-form">
-            <form action="photo_list.php" method="post">
+            <form action="" method="post">
                 <h2 class="text-center">Log in</h2>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="username" required="required">
+                    <input type="text" autofocus name="username" class="form-control" placeholder="username" required="required">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="password" required="required">
+                    <input type="password" autofocus name="password" class="form-control" placeholder="password" required="required">
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block">Log in</button>
-                </div>
-                <div class="clearfix">
-                    <a href="#" class="float-right">Forgot Password?</a>
+                    <button type="submit" name="login" class="btn btn-primary btn-block">Log in</button>
                 </div>
             </form>
             <p class="text-center"><a href="registration.php">Create an Account</a></p>
@@ -77,7 +74,7 @@ class Page
                     <strong>Registration</strong>
                 </div>
                 <div class="card-body jumbotron font-weight-bold mb-0">
-                    <form id="login" action="registration_handler.php" method="POST">
+                    <form id="login" action="registration_handler.php" enctype="multipart/form-data" method="POST">
 
                         <div class="form-row">
                             <div class="form-group col-md-6">
@@ -142,13 +139,13 @@ class Page
     {
     ?>
         <div class="login-form">
-            <form id="login" action="photoinfoadd.php" enctype="multipart/form-data" method="POST">
+            <form id="login" action="Uploadmanager.php" enctype="multipart/form-data" method="POST">
 
                 <section id="info_menu">
 
                     <div class="custom-file mb-3">
-                        <input type="file" class="custom-file-input" id="customFile">
-                        <label class="custom-file-label" for="customFile">Choose file</label>
+                        <input type="file" class="btn  " name="photo" id="customFile">
+
                     </div>
                     <div class="form-group">
                         <label for="description">Description</label>
@@ -159,8 +156,49 @@ class Page
 
                         <button type="submit" class="btn btn-primary btn-block" name="Registerphoto">GO!!!</button>
                     </div>
+                    <div class="form-group">
+                        <p><strong>Note:</strong> Only .jpg, .jpeg, .gif, .png formats allowed to a max size of 5 MB.</p>
+                    </div>
                 </section>
             </form>
+        </div>
+    <?php
+    }
+    //this method is used to display the photo list of a particular user
+    static function displayPhotolist($photo_list)
+    { ?>
+        <div class="container bg-light border border-dark mb-3 mt-3 rounded-lg p-3">
+            <div class="row align-items-center" style="margin:auto;">
+                <div class="col">Please <a href="photo_upload.php">Click here to Upload photos!</a></div>
+            </div>
+        </div>
+        <?php
+        foreach ($photo_list as $photo) {
+        ?>
+            <div class="container bg-light border border-dark mb-3 mt-3 rounded-lg p-3">
+                <div class="row align-items-center font-weight-bold" style="margin:auto;">
+                    <div class="col mr-3">
+                        <a href="<?php echo $photo->getFilepath(); ?>">
+                        <img src="<?php echo $photo->getFilepath(); ?>"  width="150px" height="150px" class="rounded" alt="Cinque Terre">
+                        </a>
+                    </div>
+                    <div class="col"><?php echo $photo->getName(); ?></div>
+                    <div class="col col-md-3"><?php echo $photo->getDescription(); ?></div>
+                    <div class="col text-primary"><i class="fa fa-pencil-square-o text-primary" aria-hidden="true"></i> Details</div>
+                    <div class="col text-primary"><i class="fa fa-trash text-primary" aria-hidden="true"></i> Delete</div>
+                </div>
+            </div>
+        <?php
+        }
+    }
+    // this methods give a confiramation message to user for registration
+    static function backToLogin()
+    {
+        ?>
+        <div class="container bg-light border border-dark mb-3 mt-3 rounded-lg p-3">
+            <div class="row align-items-center" style="margin:auto;">
+                <div class="col">Please <a href="login.php">Click here to go back to Login Page!</a></div>
+            </div>
         </div>
 <?php
     }

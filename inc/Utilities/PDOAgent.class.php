@@ -14,7 +14,7 @@ class PDOAgent  {
     private $dsn = "";          //Data Source Name
     private $className = "";    //Name of the class we are mapping with this PDO Agent
     private $error = "";        //Store any error messages
-    private $stmt = "";         //Stores our statement instance
+    private $stmt ;        //Stores our statement instance
     private $pdo = "";          //Store our local instantiation of the PDO driver
 
 
@@ -64,10 +64,6 @@ class PDOAgent  {
                 $type = PDO::PARAM_STR;  
                 }  
         }  
-        var_dump($param);
-        var_dump($value);
-        var_dump($type);
-        var_dump('<br>');
 
         $this->stmt->bindValue($param, $value, $type);  
     }  

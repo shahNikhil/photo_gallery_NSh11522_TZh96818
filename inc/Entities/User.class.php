@@ -13,7 +13,7 @@ class User {
     private $password = '';
 
     //Setters
-    function setId(int $id)   {
+     function setId(int $id)   {
         $this->id = $id;
     }  
     function setUsername(string $username)   {
@@ -45,10 +45,10 @@ class User {
     function getUsername() : string{
         return $this->username;
     }
-    function getFirstlName() : string{
+    function getFirstName() : string{
         return $this->first_name;
     }
-    function getLastlName() : string{
+    function getLastName() : string{
         return $this->last_name;
     }
     function getEmail() : string{
