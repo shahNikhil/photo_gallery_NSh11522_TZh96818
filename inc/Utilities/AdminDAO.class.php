@@ -15,11 +15,9 @@ class AdminDAO {
     static function createAdmin(string $user_id){
 
         // query
-         $sqlInsert = "INSERT INTO operator (user_id) 
-         VALUES ('$user_id')";
+         $sqlInsert = "INSERT INTO operator (user_id) VALUES ('$user_id')";
          // bind
          self::$db->query($sqlInsert);
-
          // execute
          self::$db->execute();
 
@@ -31,7 +29,7 @@ class AdminDAO {
     // get a user detail
     static function getAdmin(String $user_id) {
         // you know the drill
-        $sql = "SELECT * FROM users WHERE user_id=:u;";
+        $sql = "SELECT * FROM operator WHERE user_id=:u;";
         self::$db->query($sql);
         self::$db->bind(':u',$user_id);
    

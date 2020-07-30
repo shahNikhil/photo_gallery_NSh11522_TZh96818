@@ -2,10 +2,13 @@
 require_once("inc/config.inc.php");
 require_once("inc/Entities/Page.class.php");
 require_once("inc/Entities/User.class.php");
+require_once("inc/Entities/Admin.class.php");
 
 require_once("inc/Utilities/Validate.class.php");
 require_once("inc/Utilities/PDOAgent.class.php");
 require_once("inc/Utilities/UserDAO.class.php");
+require_once("inc/Utilities/AdminDAO.class.php");
+
 require_once("inc/Utilities/LoginManager.class.php");
 
 
@@ -15,9 +18,10 @@ require_once("inc/Utilities/LoginManager.class.php");
         if (empty($error)){ //validation to be added
             //Initialize the DAO
             UserDAO::init();
+            AdminDAO::init();
             // instantiate a new user
             $res = new User;
-    
+
             // assemble the user data
             $res->setFirstname($_POST["firstname"]);
             $res->setLastname($_POST["lastname"]);
@@ -29,10 +33,13 @@ require_once("inc/Utilities/LoginManager.class.php");
             $res->setPassword($pass);
     
             //Send the Reservation to the DAO for creation        
-            UserDAO::createUser($res);
+            $user_id = UserDAO::createUser($res);   
             // create the user
 
             //TODO: check if user is registered as admin
+            if (isset($_POST['role']) && $_POST['role'] == "admin"){
+                AdminDAO::createAdmin($user_id);
+            }
 
             // send the user to the login page      
             header("Location: Confirmation.php");  

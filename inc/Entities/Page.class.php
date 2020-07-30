@@ -123,8 +123,8 @@ class Page
                                 <button class="btn btn-primary" type="submit" name="Register">Register</button>
                             </div>
                             <div class="form-check col-md-6">
-                                <input class="form-check-input" type="checkbox" value="admin" id="roleCheck">
-                                <label class="form-check-label" for="roleCheck">
+                                <input class="form-check-input" type="checkbox"  name="role" value="admin">
+                                <label class="form-check-label" for="role">
                                     I am an administrator
                                 </label>
                             </div>    
