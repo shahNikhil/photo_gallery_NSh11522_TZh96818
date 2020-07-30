@@ -52,7 +52,7 @@ class PhotoDAO {
         self::$db->query($sql);
         self::$db->execute();
         
-        return self::$db->singleResult();              
+        return self::$db->getResultSet();              
     }
 
         // UPDATE photos
@@ -82,7 +82,16 @@ class PhotoDAO {
             return true;
     
         }
-
+        //get all photo with username from user table
+        //perform join
+        static function getAllPhotos() {
+            $sql = "SELECT users.username, photos.file_path FROM photos JOIN users on
+                    users.id = photos.user_id;";
+            self::$db->query($sql);
+            self::$db->execute();
+            
+            return self::$db->getResultSet();              
+        }
 // Delete photos
 static function deletePhoto($pid){
     $deleteQuery = "DELETE FROM photos WHERE id = :pid;";

@@ -284,3 +284,42 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 24
+[30-Jul-2020 14:39:28 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:15
+Stack trace:
+#0 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php on line 15
+[30-Jul-2020 14:41:44 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:15
+Stack trace:
+#0 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php on line 15
+[30-Jul-2020 14:41:55 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:15
+Stack trace:
+#0 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php on line 15
+[30-Jul-2020 14:41:56 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:15
+Stack trace:
+#0 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php on line 15
+[30-Jul-2020 14:42:04 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:15
+Stack trace:
+#0 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php on line 15
+[30-Jul-2020 14:42:04 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:15
+Stack trace:
+#0 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php on line 15
+[30-Jul-2020 15:36:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOAgent::resultSet() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php:93
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php(18): PhotoDAO::getAllPhotos()
+#1 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php on line 93
+[30-Jul-2020 15:37:49 UTC] PHP Fatal error:  Uncaught Error: Cannot access private property Photo::$file_path in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php:312
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php(19): Page::displayPhotoGrid(Array)
+#1 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 312
+[30-Jul-2020 15:39:23 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type Photo as array in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php:311
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php(19): Page::displayPhotoGrid(Array)
+#1 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 311
