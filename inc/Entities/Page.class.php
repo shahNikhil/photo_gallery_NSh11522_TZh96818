@@ -342,7 +342,7 @@ class Page
      echo "<td>".$user->getFirstName()."</td>" ;
      echo "<td>".$user->getEmail()."</td>" ;
      echo "<td>".$user->getId()."</td>" ;
-     echo '<td> <a href="' . $_SERVER["PHP_SELF"] . '?action=delete&PhotoID=' . $user->getId() . '">
+     echo '<td> <a href="' . $_SERVER["PHP_SELF"] . '?action=delete&UserID=' . $user->getId() . '">
                 <i class="fa fa-trash text-primary" aria-hidden="true"></i> Delete </td></tr>' ;
     } ?>
    </table>

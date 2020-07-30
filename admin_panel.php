@@ -10,6 +10,8 @@ require_once("inc/Utilities/UserDAO.class.php");
 require_once("inc/Utilities/PhotoDAO.class.php");
 UserDAO::init();
 PhotoDAO::init();
+
+
 Page::$subTitle = "Welcome Admin:";
 Page::header("Admin Panel");
 Page::displayAdminPanel();
@@ -26,6 +28,14 @@ if(isset($_POST['all_users'])){
 if(isset($_POST['search'])){
     $searchParameter = $_POST['users'];
     $u = UserDAO::SearchUser($searchParameter);
+    Page::displayUserlist($u);
+}
+if (isset($_GET["action"]) && $_GET["action"] == "delete")  {
+    
+    PhotoDAO::deleteUserPhoto(intval($_GET['UserID']));
+    UserDAO::delUser(intval($_GET['UserID']));
+    $u = new User();
+    $u = UserDAO::getUsers();
     Page::displayUserlist($u);
 }
 Page::footer();

@@ -71,5 +71,26 @@ class UserDAO {
         
         return self::$db->getResultSet();
     }
+
+    //delete a user always remember we need to delete all the photos as user is a parent 
+    static function delUser( $userid){
+        $deleteQuery = "DELETE FROM users WHERE id =:u;";
+        try{
+            self::$db->query($deleteQuery);
+            self::$db->bind(':u', $userid);
+            self::$db->execute();
+    
+            if(self::$db->rowCount() != 1){
+                throw new Exception("Problem in deleting reservation $userid");
+            }
+        }
+        catch(Exception $e){
+           $e->getMessage(); 
+
+            return false;
+        }
+    
+        return true;
+    }
     
 }

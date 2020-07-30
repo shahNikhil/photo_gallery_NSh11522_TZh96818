@@ -114,6 +114,30 @@ static function deletePhoto($pid){
     return true;
 } 
         
+
+
+//delete all photo of a particular user
+static function deleteUserPhoto( $uid){
+    $deleteQuery = "DELETE FROM photos WHERE user_id = :uid;";
+
+    try{
+        self::$db->query($deleteQuery);
+        self::$db->bind(':pid', $uid);
+        self::$db->execute();
+
+        if(self::$db->rowCount() != 1){
+            throw new Exception("Problem in deleting reservation $uid");
+        }
+    }
+    catch(Exception $e){
+         $e->getMessage();
+
+        return false;
+    }
+
+    return true;
+} 
+        
 }
 
 ?>
