@@ -23,7 +23,7 @@ class User {
         $this->first_name = $first_name;
     }
     function setLastname(string $last_name)   {
-        $this->username = $last_name;
+        $this->last_name = $last_name;
     }
     function setEmail(string $email)   {
         $this->email = $email;
