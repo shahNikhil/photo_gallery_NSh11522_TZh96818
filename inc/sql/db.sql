@@ -22,7 +22,7 @@ create table photos (
 	FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE ON UPDATE CASCADE
 ) Engine=InnoDB;
 
-create table operator {
+create table operator (
 	user_id INT NOT NULL,
 	FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE ON UPDATE CASCADE	
-} Engine=InnoDB;
+) Engine=InnoDB;
