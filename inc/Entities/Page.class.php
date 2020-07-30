@@ -53,10 +53,13 @@ class Page
                     <input type="text" autofocus name="username" class="form-control" placeholder="username" required="required">
                 </div>
                 <div class="form-group">
-                    <input type="password" autofocus name="password" class="form-control" placeholder="password" required="required">
+                    <input type="password" name="password" class="form-control" placeholder="password" required="required">
                 </div>
-                <div class="form-group">
-                    <button type="submit" name="login" class="btn btn-primary btn-block">Log in</button>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="admin" id="roleCheck">
+                    <label class="form-check-label" for="roleCheck">
+                        Log in as administrator
+                    </label>
                 </div>
             </form>
             <p class="text-center"><a href="registration.php">Create an Account</a></p>
@@ -115,10 +118,16 @@ class Page
                             </div>
                             <br />
                         </div>
-                        <div class="form-row">
+                        <div class="form-row">                    
                             <div class="form-group col-md-6">
                                 <button class="btn btn-primary" type="submit" name="Register">Register</button>
                             </div>
+                            <div class="form-check col-md-6">
+                                <input class="form-check-input" type="checkbox" value="admin" id="roleCheck">
+                                <label class="form-check-label" for="roleCheck">
+                                    I am an administrator
+                                </label>
+                            </div>    
                         </div>
                         <fieldset>
 

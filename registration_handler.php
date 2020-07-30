@@ -31,6 +31,9 @@ require_once("inc/Utilities/LoginManager.class.php");
             //Send the Reservation to the DAO for creation        
             UserDAO::createUser($res);
             // create the user
+
+            //TODO: check if user is registered as admin
+
             // send the user to the login page      
             header("Location: Confirmation.php");  
         } else {

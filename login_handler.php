@@ -16,6 +16,14 @@ if (!empty($_POST['username'])) {
         //Set the user to logged in
         $_SESSION['loggedin'] = $authUser->getId();
 
+        if($_POST['role'] == "admin"){
+            // Fetch admin title
+
+            // if exist, go do admin page
+
+            // if not go to photo list
+        }
+
         header("Location: photo_list.php");
     } else {
         //display password error
