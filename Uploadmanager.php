@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(file_exists(UPLOAD_PATH . $filename)){
                 echo $filename . " is already exists.";
             } else{
-                move_uploaded_file($_FILES["photo"]["tmp_name"], UPLOAD_PATH.$filename);
+                move_uploaded_file($_FILES["photo"]["tmp_name"], "".UPLOAD_PATH."".$filename);
                 echo "Your file was uploaded successfully.";
                 UserDAO::init();
                 PhotoDAO::init();
@@ -40,6 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 $id = $u->getId();
                 $newUpload = new Photo();
                 $newUpload->setName("".$_FILES["photo"]["name"]);
+                $newUpload->setDisplay_name("".$_FILES["photo"]["name"]);
                 $newUpload->setFilepath(UPLOAD_PATH."".$_FILES["photo"]["name"]);
                 $newUpload->setDescription($_POST['description']);
                 $newUpload->setUser_id(intval($id));

@@ -1,0 +1,286 @@
+[30-Jul-2020 11:32:58 UTC] PHP Notice:  Undefined variable: newReservation in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 31
+[30-Jul-2020 11:32:58 UTC] PHP Stack trace:
+[30-Jul-2020 11:32:58 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:32:58 UTC] PHP Notice:  Undefined variable: facility in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 31
+[30-Jul-2020 11:32:58 UTC] PHP Stack trace:
+[30-Jul-2020 11:32:58 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:32:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 268
+[30-Jul-2020 11:32:58 UTC] PHP Stack trace:
+[30-Jul-2020 11:32:58 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:32:58 UTC] PHP   2. Page::editPhotoForm() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:31
+[30-Jul-2020 11:32:58 UTC] PHP Notice:  Undefined index: action in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 32
+[30-Jul-2020 11:32:58 UTC] PHP Stack trace:
+[30-Jul-2020 11:32:58 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:33:38 UTC] PHP Notice:  Undefined property: Photo::$PhotoID in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 269
+[30-Jul-2020 11:33:38 UTC] PHP Stack trace:
+[30-Jul-2020 11:33:38 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:33:38 UTC] PHP   2. Page::editPhotoForm() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:31
+[30-Jul-2020 11:33:38 UTC] PHP Notice:  Undefined property: Photo::$PhotoID in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 269
+[30-Jul-2020 11:33:38 UTC] PHP Stack trace:
+[30-Jul-2020 11:33:38 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:33:38 UTC] PHP   2. Page::editPhotoForm() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:31
+[30-Jul-2020 11:33:38 UTC] PHP Notice:  Undefined property: Photo::$PhotoID in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 269
+[30-Jul-2020 11:33:38 UTC] PHP Stack trace:
+[30-Jul-2020 11:33:38 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:33:38 UTC] PHP   2. Page::editPhotoForm() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:31
+[30-Jul-2020 11:33:38 UTC] PHP Notice:  Undefined property: Photo::$PhotoID in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 269
+[30-Jul-2020 11:33:38 UTC] PHP Stack trace:
+[30-Jul-2020 11:33:38 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:33:38 UTC] PHP   2. Page::editPhotoForm() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:31
+[30-Jul-2020 11:33:38 UTC] PHP Notice:  Undefined property: Photo::$PhotoID in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 269
+[30-Jul-2020 11:33:38 UTC] PHP Stack trace:
+[30-Jul-2020 11:33:38 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:33:38 UTC] PHP   2. Page::editPhotoForm() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:31
+[30-Jul-2020 11:33:38 UTC] PHP Notice:  Undefined property: Photo::$PhotoID in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 269
+[30-Jul-2020 11:33:38 UTC] PHP Stack trace:
+[30-Jul-2020 11:33:38 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:33:38 UTC] PHP   2. Page::editPhotoForm() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:31
+[30-Jul-2020 11:33:38 UTC] PHP Notice:  Undefined property: Photo::$PhotoID in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 269
+[30-Jul-2020 11:33:38 UTC] PHP Stack trace:
+[30-Jul-2020 11:33:38 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:33:38 UTC] PHP   2. Page::editPhotoForm() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:31
+[30-Jul-2020 11:33:38 UTC] PHP Notice:  Undefined property: Photo::$PhotoID in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 269
+[30-Jul-2020 11:33:38 UTC] PHP Stack trace:
+[30-Jul-2020 11:33:38 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:33:38 UTC] PHP   2. Page::editPhotoForm() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:31
+[30-Jul-2020 11:33:38 UTC] PHP Notice:  Undefined property: Photo::$PhotoID in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 269
+[30-Jul-2020 11:33:38 UTC] PHP Stack trace:
+[30-Jul-2020 11:33:38 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:33:38 UTC] PHP   2. Page::editPhotoForm() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:31
+[30-Jul-2020 11:33:38 UTC] PHP Notice:  Undefined property: Photo::$PhotoID in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 269
+[30-Jul-2020 11:33:38 UTC] PHP Stack trace:
+[30-Jul-2020 11:33:38 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:33:38 UTC] PHP   2. Page::editPhotoForm() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:31
+[30-Jul-2020 11:33:38 UTC] PHP Notice:  Undefined index: action in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 32
+[30-Jul-2020 11:33:39 UTC] PHP Stack trace:
+[30-Jul-2020 11:33:39 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:34:30 UTC] PHP Notice:  Undefined index: action in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 32
+[30-Jul-2020 11:34:30 UTC] PHP Stack trace:
+[30-Jul-2020 11:34:30 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:35:38 UTC] PHP Notice:  Undefined index: action in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 31
+[30-Jul-2020 11:35:38 UTC] PHP Stack trace:
+[30-Jul-2020 11:35:38 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:35:58 UTC] PHP Notice:  Undefined index: action in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 31
+[30-Jul-2020 11:35:58 UTC] PHP Stack trace:
+[30-Jul-2020 11:35:58 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:35:59 UTC] PHP Notice:  Undefined index: action in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 31
+[30-Jul-2020 11:35:59 UTC] PHP Stack trace:
+[30-Jul-2020 11:35:59 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:36:00 UTC] PHP Notice:  Undefined index: action in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 31
+[30-Jul-2020 11:36:00 UTC] PHP Stack trace:
+[30-Jul-2020 11:36:00 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:36:06 UTC] PHP Notice:  Undefined index: action in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 31
+[30-Jul-2020 11:36:06 UTC] PHP Stack trace:
+[30-Jul-2020 11:36:06 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:36:07 UTC] PHP Notice:  Undefined index: action in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 31
+[30-Jul-2020 11:36:07 UTC] PHP Stack trace:
+[30-Jul-2020 11:36:07 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:36:08 UTC] PHP Notice:  Undefined index: action in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 31
+[30-Jul-2020 11:36:08 UTC] PHP Stack trace:
+[30-Jul-2020 11:36:08 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:36:36 UTC] PHP Notice:  Undefined index: action in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 31
+[30-Jul-2020 11:36:36 UTC] PHP Stack trace:
+[30-Jul-2020 11:36:36 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:36:51 UTC] PHP Notice:  Undefined index: action in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 31
+[30-Jul-2020 11:36:51 UTC] PHP Stack trace:
+[30-Jul-2020 11:36:51 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:37:13 UTC] PHP Notice:  Undefined index: action in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 31
+[30-Jul-2020 11:37:13 UTC] PHP Stack trace:
+[30-Jul-2020 11:37:13 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:38:11 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 32
+[30-Jul-2020 11:38:11 UTC] PHP Stack trace:
+[30-Jul-2020 11:38:11 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:38:11 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 33
+[30-Jul-2020 11:38:11 UTC] PHP Stack trace:
+[30-Jul-2020 11:38:11 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:38:11 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to PhotoDAO::updatePhoto() must be an instance of Photo, array given, called in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 35 and defined in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php:59
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php(35): PhotoDAO::updatePhoto(Array)
+#1 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php on line 59
+[30-Jul-2020 11:38:36 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 32
+[30-Jul-2020 11:38:36 UTC] PHP Stack trace:
+[30-Jul-2020 11:38:36 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:38:36 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 33
+[30-Jul-2020 11:38:36 UTC] PHP Stack trace:
+[30-Jul-2020 11:38:36 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:38:36 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to PhotoDAO::updatePhoto() must be an instance of Photo, array given, called in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 35 and defined in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php:59
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php(35): PhotoDAO::updatePhoto(Array)
+#1 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php on line 59
+[30-Jul-2020 11:42:30 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 32
+[30-Jul-2020 11:42:30 UTC] PHP Stack trace:
+[30-Jul-2020 11:42:30 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:42:30 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 33
+[30-Jul-2020 11:42:30 UTC] PHP Stack trace:
+[30-Jul-2020 11:42:30 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:42:30 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to PhotoDAO::updatePhoto() must be an instance of Photo, array given, called in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 35 and defined in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php:59
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php(35): PhotoDAO::updatePhoto(Array)
+#1 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php on line 59
+[30-Jul-2020 11:43:57 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 32
+[30-Jul-2020 11:43:57 UTC] PHP Stack trace:
+[30-Jul-2020 11:43:57 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:43:57 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 33
+[30-Jul-2020 11:43:57 UTC] PHP Stack trace:
+[30-Jul-2020 11:43:57 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:43:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getDisplay_name() on array in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php:70
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php(35): PhotoDAO::updatePhoto(Array)
+#1 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php on line 70
+[30-Jul-2020 11:44:10 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 32
+[30-Jul-2020 11:44:10 UTC] PHP Stack trace:
+[30-Jul-2020 11:44:10 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:44:10 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 33
+[30-Jul-2020 11:44:10 UTC] PHP Stack trace:
+[30-Jul-2020 11:44:10 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:44:10 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to PhotoDAO::updatePhoto() must be an instance of Photo, array given, called in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 35 and defined in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php:59
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php(35): PhotoDAO::updatePhoto(Array)
+#1 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php on line 59
+[30-Jul-2020 11:44:42 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 32
+[30-Jul-2020 11:44:42 UTC] PHP Stack trace:
+[30-Jul-2020 11:44:42 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:44:42 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 33
+[30-Jul-2020 11:44:42 UTC] PHP Stack trace:
+[30-Jul-2020 11:44:42 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:45:20 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 32
+[30-Jul-2020 11:45:20 UTC] PHP Stack trace:
+[30-Jul-2020 11:45:20 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:45:20 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 33
+[30-Jul-2020 11:45:20 UTC] PHP Stack trace:
+[30-Jul-2020 11:45:20 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:45:39 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 32
+[30-Jul-2020 11:45:39 UTC] PHP Stack trace:
+[30-Jul-2020 11:45:39 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:45:39 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 33
+[30-Jul-2020 11:45:39 UTC] PHP Stack trace:
+[30-Jul-2020 11:45:39 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:46:08 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 32
+[30-Jul-2020 11:46:08 UTC] PHP Stack trace:
+[30-Jul-2020 11:46:08 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:46:08 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 33
+[30-Jul-2020 11:46:08 UTC] PHP Stack trace:
+[30-Jul-2020 11:46:08 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:50:48 UTC] PHP Notice:  Undefined property: Photo::$getDisplay_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 30
+[30-Jul-2020 11:50:48 UTC] PHP Stack trace:
+[30-Jul-2020 11:50:48 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:52:22 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 30
+[30-Jul-2020 11:52:22 UTC] PHP Stack trace:
+[30-Jul-2020 11:52:22 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:56:00 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 34
+[30-Jul-2020 11:56:00 UTC] PHP Stack trace:
+[30-Jul-2020 11:56:00 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:56:00 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 35
+[30-Jul-2020 11:56:00 UTC] PHP Stack trace:
+[30-Jul-2020 11:56:00 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:57:58 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 34
+[30-Jul-2020 11:57:58 UTC] PHP Stack trace:
+[30-Jul-2020 11:57:58 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:57:58 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 35
+[30-Jul-2020 11:57:58 UTC] PHP Stack trace:
+[30-Jul-2020 11:57:58 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:57:59 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 34
+[30-Jul-2020 11:57:59 UTC] PHP Stack trace:
+[30-Jul-2020 11:57:59 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:57:59 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 35
+[30-Jul-2020 11:57:59 UTC] PHP Stack trace:
+[30-Jul-2020 11:57:59 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:58:04 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 34
+[30-Jul-2020 11:58:04 UTC] PHP Stack trace:
+[30-Jul-2020 11:58:04 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:58:04 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 35
+[30-Jul-2020 11:58:04 UTC] PHP Stack trace:
+[30-Jul-2020 11:58:04 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:58:12 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 34
+[30-Jul-2020 11:58:12 UTC] PHP Stack trace:
+[30-Jul-2020 11:58:12 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:58:12 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 35
+[30-Jul-2020 11:58:12 UTC] PHP Stack trace:
+[30-Jul-2020 11:58:12 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:59:28 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 34
+[30-Jul-2020 11:59:28 UTC] PHP Stack trace:
+[30-Jul-2020 11:59:28 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 11:59:28 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 35
+[30-Jul-2020 11:59:28 UTC] PHP Stack trace:
+[30-Jul-2020 11:59:28 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 12:00:16 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 34
+[30-Jul-2020 12:00:16 UTC] PHP Stack trace:
+[30-Jul-2020 12:00:16 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 12:00:16 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 35
+[30-Jul-2020 12:00:16 UTC] PHP Stack trace:
+[30-Jul-2020 12:00:16 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 12:00:16 UTC] PHP Notice:  Undefined index: display_name in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 34
+[30-Jul-2020 12:00:16 UTC] PHP Stack trace:
+[30-Jul-2020 12:00:16 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 12:00:16 UTC] PHP Notice:  Undefined index: description in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 35
+[30-Jul-2020 12:00:16 UTC] PHP Stack trace:
+[30-Jul-2020 12:00:16 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 12:02:27 UTC] PHP Notice:  Undefined index: PhotoID in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 36
+[30-Jul-2020 12:02:27 UTC] PHP Stack trace:
+[30-Jul-2020 12:02:27 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 13:06:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOAgent::debugDumpParams() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php:101
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php(29): PhotoDAO::deletePhoto('13')
+#1 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php on line 101
+[30-Jul-2020 13:08:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOAgent::debugDumpParams() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php:101
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php(29): PhotoDAO::deletePhoto('12')
+#1 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php on line 101
+[30-Jul-2020 13:22:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOAgent::debugDumpParams() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php:101
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php(30): PhotoDAO::deletePhoto('14')
+#1 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php on line 101
+[30-Jul-2020 13:26:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOAgent::debugDumpParams() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php:101
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php(32): PhotoDAO::deletePhoto('15')
+#1 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php on line 101
+[30-Jul-2020 13:28:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOAgent::debugDumpParams() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php:101
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php(32): PhotoDAO::deletePhoto('19')
+#1 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php on line 101
+[30-Jul-2020 13:28:24 UTC] PHP Notice:  Undefined variable: photo_list in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 59
+[30-Jul-2020 13:28:24 UTC] PHP Stack trace:
+[30-Jul-2020 13:28:24 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 13:28:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 188
+[30-Jul-2020 13:28:24 UTC] PHP Stack trace:
+[30-Jul-2020 13:28:24 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 13:28:24 UTC] PHP   2. Page::displayPhotolist() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:59
+[30-Jul-2020 13:28:26 UTC] PHP Notice:  Undefined variable: photo_list in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 38
+[30-Jul-2020 13:28:26 UTC] PHP Stack trace:
+[30-Jul-2020 13:28:26 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 13:28:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 266
+[30-Jul-2020 13:28:26 UTC] PHP Stack trace:
+[30-Jul-2020 13:28:26 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 13:28:26 UTC] PHP   2. Page::editPhotoForm() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:38
+[30-Jul-2020 13:28:27 UTC] PHP Notice:  Undefined variable: photo_list in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 59
+[30-Jul-2020 13:28:27 UTC] PHP Stack trace:
+[30-Jul-2020 13:28:27 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 13:28:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 188
+[30-Jul-2020 13:28:27 UTC] PHP Stack trace:
+[30-Jul-2020 13:28:27 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 13:28:27 UTC] PHP   2. Page::displayPhotolist() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:59
+[30-Jul-2020 13:28:28 UTC] PHP Notice:  Undefined variable: photo_list in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 38
+[30-Jul-2020 13:28:28 UTC] PHP Stack trace:
+[30-Jul-2020 13:28:28 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 13:28:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 266
+[30-Jul-2020 13:28:28 UTC] PHP Stack trace:
+[30-Jul-2020 13:28:28 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:0
+[30-Jul-2020 13:28:28 UTC] PHP   2. Page::editPhotoForm() D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:38
+[30-Jul-2020 13:35:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getId() on bool in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:24
+Stack trace:
+#0 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 24
+[30-Jul-2020 13:39:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getId() on bool in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php:24
+Stack trace:
+#0 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\photo_list.php on line 24

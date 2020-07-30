@@ -5,6 +5,7 @@ class Photo {
     //Properties
     private $id = 0;
     private $name = '';
+    private $display_name='';
     private $file_path = '';
     private $description = '';
     private $user_id =0;
@@ -23,6 +24,10 @@ class Photo {
     {
         return $this->user_id;
     }
+    public function getDisplay_name()
+    {
+        return $this->display_name;
+    }
     //Setter
     public function setName($name){
         $this->name = $name;
@@ -37,10 +42,32 @@ class Photo {
     {
         $this->user_id = $user_id;
     }
+    public function setDisplay_name($display_name)
+    {
+        $this->display_name = $display_name;
+    }
  
 
 
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
+        return $this->id;
+    }
 
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
 }
 
 ?>

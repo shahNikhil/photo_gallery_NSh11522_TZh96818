@@ -38,6 +38,15 @@ class PhotoDAO {
         return self::$db->getResultSet();        
     }
 
+    static function getPhotoByID(string $pID) {
+        $sql = "SELECT * FROM photos WHERE user_id=:pID";
+        self::$db->query($sql);
+        self::$db->bind(":pID",intval($pID));
+        self::$db->execute();
+        
+        return self::$db->getResultSet();        
+    }
+
     static function getPhotos() {
         $sql = "SELECT * FROM photos";
         self::$db->query($sql);
@@ -45,6 +54,57 @@ class PhotoDAO {
         
         return self::$db->singleResult();              
     }
+
+        // UPDATE photos
+        static function updatePhoto (Photo $photoToUpdate) {
+
+            //QUERY, BIND, EXECUTE
+            // Return the rowCount
+    
+            $updateQuery = "UPDATE photos SET display_name=:name,description=:desmessg
+                WHERE id =:pid;";
+    
+            try {
+    
+                self::$db->query($updateQuery);
+                self::$db->bind(':name', $photoToUpdate->getDisplay_name());
+                self::$db->bind(':desmessg', $photoToUpdate->getDescription());
+                self::$db->bind(':pid', $photoToUpdate->getId());
+    
+                self::$db->execute();
+    
+            }
+            catch(Exception $e){
+                echo $e->getMessage();
+                return false;
+            }
+    
+            return true;
+    
+        }
+
+// Delete photos
+static function deletePhoto($pid){
+    $deleteQuery = "DELETE FROM photos WHERE id = :pid;";
+
+    try{
+        self::$db->query($deleteQuery);
+        self::$db->bind(':pid', $pid);
+        self::$db->execute();
+
+        if(self::$db->rowCount() != 1){
+            throw new Exception("Problem in deleting reservation $pid");
+        }
+    }
+    catch(Exception $e){
+        echo $e->getMessage();
+        self::$db->debugDumpParams();
+        return false;
+    }
+
+    return true;
+} 
+        
 }
 
 ?>

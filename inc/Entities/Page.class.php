@@ -194,10 +194,18 @@ class Page
                         <img src="<?php echo $photo->getFilepath(); ?>"  width="150px" height="150px" class="rounded" alt="Cinque Terre">
                         </a>
                     </div>
-                    <div class="col"><?php echo $photo->getName(); ?></div>
+                    <div class="col"><?php echo $photo->getDisplay_name(); ?></div>
                     <div class="col col-md-3"><?php echo $photo->getDescription(); ?></div>
-                    <div class="col text-primary"><i class="fa fa-pencil-square-o text-primary" aria-hidden="true"></i> Details</div>
-                    <div class="col text-primary"><i class="fa fa-trash text-primary" aria-hidden="true"></i> Delete</div>
+                    <div class="col text-primary">
+                    <?php 
+                    echo '<a href="' . $_SERVER["PHP_SELF"] . '?action=edit&PhotoID='.$photo->getId().'">'; 
+                    ?>
+                    <i class="fa fa-pencil-square-o text-primary" aria-hidden="true"></i> Details</div>
+                    <div class="col text-primary">
+                    <?php    
+                    echo '<a href="' . $_SERVER["PHP_SELF"] . '?action=delete&PhotoID='.$photo->getId().'"> '; 
+                    ?>  
+                    <i class="fa fa-trash text-primary" aria-hidden="true"></i> Delete</div>
                 </div>
             </div>
         <?php
@@ -209,9 +217,93 @@ class Page
         ?>
         <div class="container bg-light border border-dark mb-3 mt-3 rounded-lg p-3">
             <div class="row align-items-center" style="margin:auto;">
-                <div class="col">Please <a href="login.php">Click here to go back to Login Page!</a></div>
+                <div class="col">Please <a href="login.php">Click here to go back to your gallery!</a></div>
             </div>
         </div>
 <?php
     }
+    static function backToPhotoList()
+    {
+        ?>
+        <div class="container bg-light border border-dark mb-3 mt-3 rounded-lg p-3">
+            <div class="row align-items-center" style="margin:auto;">
+                <div class="col">Please <a href="photo_list.php">Click here to go back to your gallery!</a></div>
+            </div>
+        </div>
+<?php
+    }
+    //this method is usedto authenticate the admin 
+    static function displayAdminLogin(){
+        ?>
+        <div class="login-form">
+        <form action="admin_login_handler.php" method="POST">
+            <h2 class="text-center">Log in</h2>
+            <div class="form-group">
+                <input type="text" autofocus name="username" class="form-control" placeholder="username" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="password" required="required">
+            </div>
+            <div class="form-group">
+                <input class="form-check-input" type="checkbox"  name="role" value="admin">
+                <label class="form-check-label" for="role">
+                    Login as administrator
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block" name="login">Log in</button>
+            </div>
+        </form>
+        <p class="text-center"><a href="registration.php">Create an Account</a></p>
+    </div>
+<?php
+    }
+//this edit the photos of a user who has logged in
+static function editPhotoForm( $Photos)   {  ?>        
+    <!-- Start the page's edit entry form -->
+    
+    <div class="login-form bg-light border">
+        <h3 class ="text-center text-primary border">Edit Photo - <?php echo $_GET['PhotoID']; ?></h3>
+        <form class ="text-center" action=""  method="post">
+        <div class="form-group row">
+        <label class="form-check-label">Photo ID</label>
+        <label class="form-check-label"><?php echo $_GET['PhotoID']; ?></label>
+        </div>
+                <?php 
+             
+                $display_name="";
+                $description="";
+                 foreach($Photos as $Photo)  {
+                        if($Photo->getId() == $_GET['PhotoID']){
+                           $display_name = $Photo->getDisplay_name();
+                           $description = $Photo->getDescription(); 
+
+                        }
+                 }
+                ?>
+                 <div class="form-group row">
+                 <label class="form-check-label">Name</label>
+                 <label class="form-check-label">
+                 <input type="text" name="display_name" value ="<?php echo $display_name; ?>"></label>
+                 </div>
+
+                <div class="form-group row">
+                <label class="form-check-label">Description</label>
+                <label class="form-check-label">
+                <input type="text" name="description" value ="<?php echo $description; ?>"></label>
+                </div>
+
+
+            <!-- We need another hidden input for Photo id here. Why? -->
+            <input type="hidden" name="Photoid" value="<?php echo $_GET['PhotoID'] ; ?>">
+            
+            <!-- Use input type hidden to let us know that this action is to edit -->
+            <input type="hidden" name="action" value="edit">
+            <input type="submit" name="submit" class="button "  value="Edit Photo" >                
+        </form>
+     </div>
+
+<?php }
+
 }
+?>

@@ -20,3 +20,14 @@
     font-size: 15px;
     font-weight: bold;
 }
+.button {
+    padding:0;
+    margin:0;
+    border:none;
+    font-size:14px;
+    background: url(../../photo_list.php) no-repeat center;
+    color: #000000;
+    height:27px;
+    width:134px; 
+    font-variant:small-caps;
+}
