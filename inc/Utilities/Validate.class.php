@@ -14,7 +14,7 @@ class Validate{
     // Up to you how to create the function(s) to validate the inputs    
     $errors_array =array();   
     // What to validate?
-    $fnameErr =null;$lnameErr=null;$emailErr=null;$mobrErr=null;$addErr=null;$unameErr=null;$pErr=null;
+    $fnameErr =null;$lnameErr=null;$emailErr=null;$mobErr=null;$addErr=null;$unameErr=null;$pErr=null;
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // First Name and Last Name should not be empty and not numbers
         // Also replace occurences of semicolon, colon, comma, ampersand, 
@@ -49,9 +49,8 @@ class Validate{
             $emailErr = "Invalid email format";
             }
         }
-    // One of the color must be chosen. The first option is not a valid entry
     if (!preg_match('/^[0-9]{10}+$/',($_POST["mobileno"]))) {
-        $mobErr = "Please Enter valid no!";
+        $mobErr = "Please Enter valid mobile no.!";
       }
     // Age must be in number between 15 to 100
     if (empty($_POST["address"])) {

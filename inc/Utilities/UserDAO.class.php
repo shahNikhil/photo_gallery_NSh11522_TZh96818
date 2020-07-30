@@ -15,8 +15,8 @@ class UserDAO {
     static function createUser(User $user){
         // make sure the strings being stored in the database are cleaned 
         // trimmed, and changed to lowercase - handled in class        
-        $fname = $user->getFirstlName();
-        $lname = $user->getLastlName();
+        $fname = $user->getFirstName();
+        $lname = $user->getLastName();
         $uname = $user->getUsername();
         $email = $user->getEmail();
         $mobileno = $user->getMobile();
