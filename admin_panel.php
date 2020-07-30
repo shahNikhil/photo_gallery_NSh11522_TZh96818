@@ -18,5 +18,10 @@ if(isset($_POST['public_gallery'])){
     $a = PhotoDAO::getAllPhotos();
     Page::displayPhotoGrid($a);
 }
+if(isset($_POST['all_users'])){
+    $u = new User();
+    $u = UserDAO::getUsers();
+    Page::displayUserlist($u);
+}
 Page::footer();
 ?>

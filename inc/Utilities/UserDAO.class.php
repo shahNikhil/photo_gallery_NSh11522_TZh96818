@@ -57,7 +57,7 @@ class UserDAO {
         self::$db->query($sql);
         self::$db->execute();
         
-        return self::$db->resultSet();
+        return self::$db->getResultSet();
     }
     
     

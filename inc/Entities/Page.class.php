@@ -243,8 +243,9 @@ class Page
             <form class="form-inline" action="" enctype="multipart/form-data" method="POST">
 
                     <input class="form-control ml-5 mr-sm-5" name='users' type="search" placeholder="Search" aria-label="Search">
-                    <button class="bg-primary text-light ml-5" name="search" type="submit">Search</button>
+                    <button class="bg-primary text-light ml-5" name="search" type="submit">Search by username</button>
                     <button class="bg-primary text-light ml-5" name="public_gallery" type="submit">View all photos</button>
+                    <button class="bg-primary text-light ml-5" name="all_users" type="submit">View all users</button>
                     <button class="bg-primary text-light ml-5" name="logout" type="submit">Logout</button>
                 </form>
 
@@ -318,5 +319,34 @@ class Page
 </div>
  <?php
     }
+
+    //this method displays all the list of user for delete
+    static function displayUserlist($users)
+    {
+        ?>
+    <div class="container">
+    <h1>Public Gallery :</h1>   
+   <table class="table table-striped border">
+       <tr>
+       <th>UserID</th>
+       <th>Username</th>
+       <th>First Name</th>
+       <th>Last Name</th>
+       <th>Email</th>
+       <th>Delete</th></tr>
+    <?php
+    foreach($users as $user)
+    {
+     echo "<tr><td>".$user->getId()."</td>" ;  
+     echo "<td>". $user->getUsername() ."</td>" ;
+     echo "<td>".$user->getFirstName()."</td>" ;
+     echo "<td>".$user->getEmail()."</td>" ;
+     echo "<td>".$user->getId()."</td>" ;
+     echo '<td> <a href="' . $_SERVER["PHP_SELF"] . '?action=delete&PhotoID=' . $user->getId() . '">
+                <i class="fa fa-trash text-primary" aria-hidden="true"></i> Delete </td></tr>' ;
+    } ?>
+   </table>
+   <?php }
 }
+
 ?>
