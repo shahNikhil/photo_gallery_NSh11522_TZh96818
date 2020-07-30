@@ -329,3 +329,73 @@ Stack trace:
 #0 D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php(23): UserDAO::getUsers()
 #1 {main}
   thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php on line 60
+[30-Jul-2020 17:15:10 UTC] PHP Notice:  Undefined variable: u in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php on line 28
+[30-Jul-2020 17:15:10 UTC] PHP Stack trace:
+[30-Jul-2020 17:15:10 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:0
+[30-Jul-2020 17:15:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 338
+[30-Jul-2020 17:15:10 UTC] PHP Stack trace:
+[30-Jul-2020 17:15:10 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:0
+[30-Jul-2020 17:15:10 UTC] PHP   2. Page::displayUserlist() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:28
+[30-Jul-2020 17:15:32 UTC] PHP Notice:  Undefined variable: u in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php on line 28
+[30-Jul-2020 17:15:32 UTC] PHP Stack trace:
+[30-Jul-2020 17:15:32 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:0
+[30-Jul-2020 17:15:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 338
+[30-Jul-2020 17:15:32 UTC] PHP Stack trace:
+[30-Jul-2020 17:15:32 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:0
+[30-Jul-2020 17:15:32 UTC] PHP   2. Page::displayUserlist() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:28
+[30-Jul-2020 17:15:35 UTC] PHP Notice:  Undefined variable: u in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php on line 28
+[30-Jul-2020 17:15:35 UTC] PHP Stack trace:
+[30-Jul-2020 17:15:35 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:0
+[30-Jul-2020 17:15:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 338
+[30-Jul-2020 17:15:35 UTC] PHP Stack trace:
+[30-Jul-2020 17:15:36 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:0
+[30-Jul-2020 17:15:36 UTC] PHP   2. Page::displayUserlist() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:28
+[30-Jul-2020 17:15:39 UTC] PHP Notice:  Undefined variable: u in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php on line 28
+[30-Jul-2020 17:15:39 UTC] PHP Stack trace:
+[30-Jul-2020 17:15:39 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:0
+[30-Jul-2020 17:15:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 338
+[30-Jul-2020 17:15:39 UTC] PHP Stack trace:
+[30-Jul-2020 17:15:39 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:0
+[30-Jul-2020 17:15:39 UTC] PHP   2. Page::displayUserlist() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:28
+[30-Jul-2020 17:15:46 UTC] PHP Notice:  Undefined variable: u in D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php on line 28
+[30-Jul-2020 17:15:46 UTC] PHP Stack trace:
+[30-Jul-2020 17:15:46 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:0
+[30-Jul-2020 17:15:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 338
+[30-Jul-2020 17:15:46 UTC] PHP Stack trace:
+[30-Jul-2020 17:15:46 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:0
+[30-Jul-2020 17:15:46 UTC] PHP   2. Page::displayUserlist() D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php:28
+[30-Jul-2020 17:16:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%' at line 1 in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php:74
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php(74): PDOStatement->execute()
+#1 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php(70): PDOAgent->execute()
+#2 D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php(28): UserDAO::SearchUser('u')
+#3 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php on line 74
+[30-Jul-2020 17:16:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='us' %' at line 1 in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php:74
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php(74): PDOStatement->execute()
+#1 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php(70): PDOAgent->execute()
+#2 D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php(28): UserDAO::SearchUser('us')
+#3 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php on line 74
+[30-Jul-2020 17:17:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='us'%' at line 1 in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php:74
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php(74): PDOStatement->execute()
+#1 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php(70): PDOAgent->execute()
+#2 D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php(28): UserDAO::SearchUser('us')
+#3 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php on line 74
+[30-Jul-2020 17:17:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='user'%' at line 1 in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php:74
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php(74): PDOStatement->execute()
+#1 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php(70): PDOAgent->execute()
+#2 D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php(28): UserDAO::SearchUser('user')
+#3 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php on line 74
+[30-Jul-2020 17:17:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':u%' at line 1 in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php:74
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php(74): PDOStatement->execute()
+#1 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php(70): PDOAgent->execute()
+#2 D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php(28): UserDAO::SearchUser('user')
+#3 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php on line 74

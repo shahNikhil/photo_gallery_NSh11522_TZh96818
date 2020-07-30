@@ -60,5 +60,16 @@ class UserDAO {
         return self::$db->getResultSet();
     }
     
+    //search users
+    static function SearchUser(String $userName) {
+        // you know the drill
+        $sql = "SELECT * FROM users WHERE username Like  CONCAT(:u,'%');";
+        self::$db->query($sql);
+        self::$db->bind(':u',$userName);
+   
+        self::$db->execute();
+        
+        return self::$db->getResultSet();
+    }
     
 }

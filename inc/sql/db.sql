@@ -33,15 +33,15 @@ create table operator (
 --
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `email`, `mobile`, `address`, `password`) VALUES
-(1, 'Nikhil', 'Shah', 'user1', 'mshahnikhil@gmail.com', 2147483647, '#211,404 seventh Street\r\n', '$2y$10$adYFZIR2mkChkRBPHTKdK.vcW2ss5LUXw3BBdse7uXLQePRN5k1WG');
+(1, 'Nikhil', 'Shah', 'nick', 'dummy@gmail.com', 2147483647, '#211,404 douglas Street\r\n', '$2y$10$adYFZIR2mkChkRBPHTKdK.vcW2ss5LUXw3BBdse7uXLQePRN5k1WG');
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `email`, `mobile`, `address`, `password`) VALUES
-(2, 'Tom', 'Shah', 'user2', 'mshahnikhil@gmail.com', 2147483647, '#211,404 seventh Street\r\n', '$2y$10$iJy9Sh63mGgi.QYlJc6eIuo5rh4GHF4Ip5b0IQftDgsxCmKb2G3wW');
+(2, 'Tom', 'Shah', 'dummy', 'dummy@gmail.com', 2147483647, '#211,404 douglas Street\r\n', '$2y$10$iJy9Sh63mGgi.QYlJc6eIuo5rh4GHF4Ip5b0IQftDgsxCmKb2G3wW');
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `email`, `mobile`, `address`, `password`) VALUES
-(3, 'jerry', 'shah', 'user3', 'mshahnikhil@gmail.com', 2147483647, '#211,404 seventh Street\r\n', '$2y$10$LAxRUoVecSI3muoA5T08quzy6nY1KsSJJSm8aAOZ6edal8soUi.NK');
+(3, 'jerry', 'shah', 'sunny', 'dummy@gmail.com', 2147483647, '#211,404 douglas Street\r\n', '$2y$10$LAxRUoVecSI3muoA5T08quzy6nY1KsSJJSm8aAOZ6edal8soUi.NK');
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `email`, `mobile`, `address`, `password`) VALUES
-(4, 'micky', 'Shah', 'user4', 'mshahnikhil@gmail.com', 2147483647, '#211,404 seventh Street\r\n', '$2y$10$6yuUVhn4792F7oXQ2/yDsOgQANSOcST5ADovfi/S8oJUNe1Nd.Yfu');
+(4, 'micky', 'Shah', 'corona', 'dummy@gmail.com', 2147483647, '#211,404 douglas Street\r\n', '$2y$10$6yuUVhn4792F7oXQ2/yDsOgQANSOcST5ADovfi/S8oJUNe1Nd.Yfu');
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `email`, `mobile`, `address`, `password`) VALUES
-(5, 'mouse', 'Shah', 'user5', 'mshahnikhil@gmail.com', 2147483647, '#211,404 seventh Street\r\n', '$2y$10$3HTjMl7GJs7.OQ4sQ8fY..v96ecTXd.Qlnn42VEfKLPhpNmWUyeem');
+(5, 'mouse', 'Shah', 'CSIS', 'dummy@gmail.com', 2147483647, '#211,404 douglas Street\r\n', '$2y$10$3HTjMl7GJs7.OQ4sQ8fY..v96ecTXd.Qlnn42VEfKLPhpNmWUyeem');
 
 --
 -- insterting some dummy values to have a glance at ui

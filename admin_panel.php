@@ -23,5 +23,10 @@ if(isset($_POST['all_users'])){
     $u = UserDAO::getUsers();
     Page::displayUserlist($u);
 }
+if(isset($_POST['search'])){
+    $searchParameter = $_POST['users'];
+    $u = UserDAO::SearchUser($searchParameter);
+    Page::displayUserlist($u);
+}
 Page::footer();
 ?>
