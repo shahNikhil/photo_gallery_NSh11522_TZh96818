@@ -59,6 +59,17 @@ class UserDAO {
         
         return self::$db->getResultSet();
     }
+      //validate users
+      static function validateUser(String $userName) {
+        // you know the drill
+        $sql = "SELECT * FROM users WHERE username=:u;";
+        self::$db->query($sql);
+        self::$db->bind(':u',$userName);
+   
+        self::$db->execute();
+        
+        return self::$db->getResultSet();
+    }
     
     //search users
     static function SearchUser(String $userName) {
