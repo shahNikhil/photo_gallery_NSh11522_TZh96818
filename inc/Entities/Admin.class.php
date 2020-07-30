@@ -3,16 +3,16 @@
 class Admin {
 
     //Properties
-    private $id = 0;
+    private $user_id = 0;
 
     //Setters
-     function setId(int $id)   {
-        $this->id = $id;
+     function setUserId(int $uid)   {
+        $this->user_id = $uid;
     }  
   
     //Getters
-    function getId() : int{
-        return $this->id;
+    function getUserId() : int{
+        return $this->user_id;
     }
 
 }
