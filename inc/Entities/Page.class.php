@@ -47,7 +47,7 @@ class Page
     {
     ?>
         <div class="login-form">
-            <form action="" method="post">
+            <form action="login_handler.php" method="POST">
                 <h2 class="text-center">Log in</h2>
                 <div class="form-group">
                     <input type="text" autofocus name="username" class="form-control" placeholder="username" required="required">
@@ -55,11 +55,14 @@ class Page
                 <div class="form-group">
                     <input type="password" name="password" class="form-control" placeholder="password" required="required">
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="admin" id="roleCheck">
-                    <label class="form-check-label" for="roleCheck">
-                        Log in as administrator
+                <div class="form-group">
+                    <input class="form-check-input" type="checkbox"  name="role" value="admin">
+                    <label class="form-check-label" for="role">
+                        Login as administrator
                     </label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block" name="login">Log in</button>
                 </div>
             </form>
             <p class="text-center"><a href="registration.php">Create an Account</a></p>
