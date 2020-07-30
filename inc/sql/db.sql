@@ -8,7 +8,7 @@ create table users (
 	last_name VARCHAR(50),
 	username VARCHAR(50) NOT NULL UNIQUE,
 	email VARCHAR(50),
-	mobile INT,	
+	mobile BIGINT,	
 	address VARCHAR(255),
 	password VARCHAR(250) NOT NULL
 ) Engine=InnoDB;
