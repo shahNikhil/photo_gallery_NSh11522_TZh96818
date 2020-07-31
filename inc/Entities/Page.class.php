@@ -150,7 +150,7 @@ class Page
     }
 
     //this method handles the photo uploaded by the user to gallery!!
-    static function uploadphoto()
+    static function uploadPhoto()
     {
     ?>
         <div class="login-form">
