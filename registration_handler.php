@@ -32,7 +32,7 @@ require_once("inc/Utilities/LoginManager.class.php");
             $pass = password_hash($_POST["password"],PASSWORD_DEFAULT);
             $res->setPassword($pass);
     
-            //Send the Reservation to the DAO for creation        
+            //Send the Regestration to the DAO for creation        
             $user_id = UserDAO::createUser($res);   
             // create the user
 

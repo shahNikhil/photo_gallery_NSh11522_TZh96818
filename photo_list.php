@@ -28,7 +28,7 @@ Page::$subTitle = $u->getFirstName()." ".$u->getLastName()." : My Photos"; //TOD
 Page::header("PhotoGallery");
 $photo_list =PhotoDAO::getPhoto($Uid);
 if (isset($_GET["action"]) && $_GET["action"] == "delete")  {
-    //Use the DAO to delete the corresponding Reservation
+    //Use the DAO to delete the corresponding registration
     PhotoDAO::deletePhoto($_GET['PhotoID']);
     $photo_list =PhotoDAO::getPhoto($Uid);
     }
