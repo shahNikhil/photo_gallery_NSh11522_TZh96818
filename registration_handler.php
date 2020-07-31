@@ -46,8 +46,11 @@ require_once("inc/Utilities/LoginManager.class.php");
         } else {
             // display error message
             foreach($error as $e){
-                echo"<br/> $e";
+                echo"<br/> $e <br/>";
             }
+            echo '<form>
+            <input type="button" value="Go back!" onclick="history.back()">
+           </form>';
         }   
     }        
     

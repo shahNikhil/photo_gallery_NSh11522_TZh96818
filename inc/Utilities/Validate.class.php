@@ -57,9 +57,16 @@ class Validate{
         $addErr = "Please enter a address!";
       }
     // username must be in one word. it can be combination of character and number
-    if (empty($_POST["username"])) {
+   
+    if(empty($_POST["username"])) {
         $unameErr = "User Name is required";
-      } else {
+      }else{
+        $user = "".$_POST["username"];
+        UserDAO::init();
+        $searchUser =userDAO::validateUser($user);
+        if(!empty($searchUser)){
+          $unameErr = "User Name is already taken please try different one";
+        }
         $uname = self::test_input($_POST["username"]);
         if (stripos(($_POST["username"]), ' ') !== false) {
             $unameErr = "User Name must be single word"; 

@@ -444,3 +444,53 @@ Stack trace:
 #0 D:\php\photo_gallery_NSh11522_TZh96818\admin_panel.php(35): PhotoDAO::deleteUserPhoto(1)
 #1 {main}
   thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PhotoDAO.class.php on line 134
+[30-Jul-2020 23:33:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php:67
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\Validate.class.php(60): UserDAO::SearchUser('user1')
+#1 D:\php\photo_gallery_NSh11522_TZh96818\registration_handler.php(17): Validate::validateInput()
+#2 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php on line 67
+[30-Jul-2020 23:36:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php:66
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\Validate.class.php(60): UserDAO::validateUser('user1')
+#1 D:\php\photo_gallery_NSh11522_TZh96818\registration_handler.php(17): Validate::validateInput()
+#2 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php on line 66
+[30-Jul-2020 23:37:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php:66
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\Validate.class.php(64): UserDAO::validateUser('user1')
+#1 D:\php\photo_gallery_NSh11522_TZh96818\registration_handler.php(17): Validate::validateInput()
+#2 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php on line 66
+[30-Jul-2020 23:40:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php:66
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\Validate.class.php(65): UserDAO::validateUser('user1')
+#1 D:\php\photo_gallery_NSh11522_TZh96818\registration_handler.php(17): Validate::validateInput()
+#2 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php on line 66
+[30-Jul-2020 23:41:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php:66
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\Validate.class.php(65): UserDAO::validateUser('user1')
+#1 D:\php\photo_gallery_NSh11522_TZh96818\registration_handler.php(17): Validate::validateInput()
+#2 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php on line 66
+[30-Jul-2020 23:42:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php:66
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\Validate.class.php(65): UserDAO::validateUser('user1')
+#1 D:\php\photo_gallery_NSh11522_TZh96818\registration_handler.php(17): Validate::validateInput()
+#2 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php on line 66
+[30-Jul-2020 23:43:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'user1' for key 'username' in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php:74
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php(74): PDOStatement->execute()
+#1 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php(33): PDOAgent->execute()
+#2 D:\php\photo_gallery_NSh11522_TZh96818\registration_handler.php(36): UserDAO::createUser(Object(User))
+#3 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php on line 74
+[30-Jul-2020 23:45:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'user1' for key 'username' in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php:74
+Stack trace:
+#0 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php(74): PDOStatement->execute()
+#1 D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\UserDAO.class.php(33): PDOAgent->execute()
+#2 D:\php\photo_gallery_NSh11522_TZh96818\registration_handler.php(36): UserDAO::createUser(Object(User))
+#3 {main}
+  thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php on line 74
