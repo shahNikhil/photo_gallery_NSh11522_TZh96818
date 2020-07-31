@@ -17,7 +17,7 @@ create table photos (
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	name VARCHAR(50) NOT NULL,
 	display_name VARCHAR(50) NOT NULL,
-	file_path VARCHAR(50),
+	file_path VARCHAR(1250),
 	description VARCHAR(100),
 	user_id INT NOT NULL,
 	FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE ON UPDATE CASCADE
