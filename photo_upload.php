@@ -13,7 +13,7 @@ require_once("inc/Utilities/UserDAO.class.php");
 if(LoginManager::verifyLogin()) {
     Page::$subTitle = "Upload your photo and write a short description on it here";
     Page::header("PhotoGallery");
-    Page::Uploadphoto();
+    Page::uploadphoto();
     Page::footer();
 }else{
     Page::$subTitle = "Please login first";
