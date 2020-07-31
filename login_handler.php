@@ -25,15 +25,15 @@ if((isset($_POST['login'])) && !empty($_POST)){
             session_start();
             //set the user to login
             $_SESSION['loggedin'] = $authUser->getUsername();
-
             if (isset($_POST['role']) && $_POST['role'] == "admin"){
                 $admin = AdminDAO::getAdmin($authUser->getId());
                 if ($admin->getUserId() != null){
                     header('Location: admin_panel.php'); //Redirect to admin panel
                 }
+            } else {
+                //point header to his photo list
+                header('Location: photo_list.php');                
             }
-            //point header to his photo list
-            header('Location: photo_list.php');
         }
         else{
             $login_message = "Incorrect password"; //TODO: do something to display it
