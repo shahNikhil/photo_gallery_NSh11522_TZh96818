@@ -11,7 +11,6 @@ require_once("inc/Utilities/AdminDAO.class.php");
 
 require_once("inc/Utilities/LoginManager.class.php");
 
-if(isset($_SESSION) && isset($_SESSION["loggedin"])) {
     if((isset($_POST['Register'])) && !empty($_POST)) {	
         // If the form entries are valid
         $error = Validate::validateInput();
@@ -32,7 +31,8 @@ if(isset($_SESSION) && isset($_SESSION["loggedin"])) {
             $pass = password_hash($_POST["password"],PASSWORD_DEFAULT);
             $res->setPassword($pass);
     
-            //Send the Regestration to the DAO for creation        
+            //Send the Regestration to the DAO for creation 
+            echo $_POST['firstname'];       
             $user_id = UserDAO::createUser($res);   
             // create the user
 
@@ -45,17 +45,16 @@ if(isset($_SESSION) && isset($_SESSION["loggedin"])) {
             header("Location: Confirmation.php");  
         } else {
             // display error message
-            foreach($error as $e){
-                echo"<br/> $e <br/>";
-            }
-            echo '<form>
-            <input type="button" value="Go back!" onclick="history.back()">
-           </form>';
+            Page::$subTitle = "Please fix following Inputs:" ;
+            Page::header("validation");
+            Page::displayErrors($error);
+            Page::footer();
+
         }   
-    }    
-}else{
+    }    else{
     Page::$subTitle = "Please login first";
     Page::header("Access Denied");
+    Page::backToLogin();
     Page::footer();
 }    
     

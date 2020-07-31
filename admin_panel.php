@@ -16,7 +16,7 @@ if(LoginManager::verifyLogin()) {
 
 
     Page::$subTitle = "Welcome Admin:";
-    var_dump($_SESSION);
+
 
     Page::header("Admin Panel");
     Page::displayAdminPanel();

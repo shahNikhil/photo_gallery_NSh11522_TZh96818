@@ -79,6 +79,20 @@ class Page
 
     <?php
     }
+    //This method will display any validation errors which are required to register a user
+    static function displayErrors($errors){
+        echo '<div class="container card jumbotron"><ol>';
+        foreach($errors as $e){
+            echo"<li class='text-dark mb-1'> $e </li>";
+        }
+        echo '</ol><form class="form text-primary">
+        <div class="form-row text-primary">
+        <label>Please Register again!!</label></div>
+        <div class="form-row">
+        <input type="button" value="Go back!" onclick="history.back()"></div>
+       </form></div>';
+
+    }
     // this method will display the registration form
     static function displayRegistrationForm()
     {

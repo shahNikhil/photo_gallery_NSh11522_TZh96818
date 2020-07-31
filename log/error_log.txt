@@ -494,3 +494,8 @@ Stack trace:
 #2 D:\php\photo_gallery_NSh11522_TZh96818\registration_handler.php(36): UserDAO::createUser(Object(User))
 #3 {main}
   thrown in D:\php\photo_gallery_NSh11522_TZh96818\inc\Utilities\PDOAgent.class.php on line 74
+[31-Jul-2020 10:09:22 UTC] PHP Notice:  Undefined index: loggedin in D:\php\photo_gallery_NSh11522_TZh96818\registration_handler.php on line 59
+[31-Jul-2020 10:09:22 UTC] PHP Stack trace:
+[31-Jul-2020 10:09:22 UTC] PHP   1. {main}() D:\php\photo_gallery_NSh11522_TZh96818\registration_handler.php:0
+[31-Jul-2020 10:23:35 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 85
+[31-Jul-2020 10:23:48 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\php\photo_gallery_NSh11522_TZh96818\inc\Entities\Page.class.php on line 84

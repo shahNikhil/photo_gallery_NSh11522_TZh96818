@@ -74,7 +74,6 @@ class Validate{
       }
     // password
         // let's have a 6 digits string as password
-        // both password and password confirm needs to be the same
         if (empty($_POST["password"])) {
             $pErr = "password is required";
           } else {
