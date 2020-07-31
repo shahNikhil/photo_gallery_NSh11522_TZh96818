@@ -240,16 +240,12 @@ class Page
     {
     ?>
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    
 
-  
             <form class="form-inline" action="" enctype="multipart/form-data" method="POST">
-
                     <input class="form-control ml-5 mr-sm-5" name='users' type="search" placeholder="Search" aria-label="Search">
                     <button class="bg-primary text-light ml-5" name="search" type="submit">Search by username</button>
                     <button class="bg-primary text-light ml-5" name="public_gallery" type="submit">View all photos</button>
                     <button class="bg-primary text-light ml-5" name="all_users" type="submit">View all users</button>
-                    <button class="bg-primary text-light ml-5" name="logout" type="submit">Logout</button>
                 </form>
 
         </nav>

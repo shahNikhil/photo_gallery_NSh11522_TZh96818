@@ -12,8 +12,6 @@ require_once("inc/Utilities/UserDAO.class.php");
 require_once("inc/Utilities/PhotoDAO.class.php");
 
 session_start();
-
-
 if(isset($_SESSION) && isset($_SESSION["loggedin"])) {
     // View a list of photo, and click link to upload photo
 
