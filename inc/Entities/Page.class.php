@@ -25,9 +25,18 @@ class Page
         </head>
 
         <body>
-            <div class="jumbotron text-center">
-                <h1><?php echo self::$title; ?></h1>
-                <h4><?php echo self::$subTitle; ?></h4>
+            <div class="jumbotron">
+                <?php
+                if (isset($_SESSION) && isset($_SESSION['loggedin'])){
+                    echo '<div class="pull-right">';
+                    echo '  <div><a href="login_handler.php?logout">Logout</a></div>';
+                    echo '</div>';
+                }
+                ?>    
+                <div class="text-center">
+                    <h1><?php echo self::$title; ?></h1>
+                    <h4><?php echo self::$subTitle; ?></h4>
+                </div>
             </div>
         <?php
     }
