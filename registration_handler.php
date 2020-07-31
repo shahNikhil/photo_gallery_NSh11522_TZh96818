@@ -51,11 +51,7 @@ require_once("inc/Utilities/LoginManager.class.php");
             Page::footer();
 
         }   
-    }    else{
-    Page::$subTitle = "Please login first";
-    Page::header("Access Denied");
-    Page::backToLogin();
-    Page::footer();
+    } 
 }    
     
 ?>
