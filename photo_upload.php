@@ -10,8 +10,7 @@ require_once("inc/Utilities/LoginManager.class.php");
 require_once("inc/Utilities/PDOAgent.class.php");
 require_once("inc/Utilities/UserDAO.class.php");
 
-session_start();
-if(isset($_SESSION) && isset($_SESSION["loggedin"])) {
+if(LoginManager::verifyLogin()) {
     Page::$subTitle = "Upload your photo and write a short description on it here";
     Page::header("PhotoGallery");
     Page::Uploadphoto();

@@ -9,9 +9,8 @@ require_once("inc/Utilities/PDOAgent.class.php");
 require_once("inc/Utilities/UserDAO.class.php");
 require_once("inc/Utilities/PhotoDAO.class.php");
 
-session_start();
 
-if(isset($_SESSION) && isset($_SESSION["loggedin"])) {
+if(LoginManager::verifyLogin()) {
     UserDAO::init();
     PhotoDAO::init();
 

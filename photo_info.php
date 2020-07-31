@@ -9,10 +9,13 @@ require_once("inc/Utilities/LoginManager.class.php");
 require_once("inc/Utilities/PDOAgent.class.php");
 require_once("inc/Utilities/UserDAO.class.php");
 
-Page::$subTitle = "Photo Detail Page"; //TODO: make it be the file name of the photo
-Page::header("PhotoGallery");
+if(LoginManager::verifyLogin()) {
+    Page::$subTitle = "Photo Detail Page"; //TODO: make it be the file name of the photo
+    Page::header("PhotoGallery");
 
-// View the photo in bigger view
+    // View the photo in bigger view
 
-Page::footer();
+    Page::footer();
+}
+
 ?>
