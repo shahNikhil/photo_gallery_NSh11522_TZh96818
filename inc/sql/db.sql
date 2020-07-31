@@ -42,9 +42,10 @@ INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `email`, `mobi
 (4, 'micky', 'Shah', 'corona', 'dummy@gmail.com', 2147483647, '#211,404 douglas Street\r\n', '$2y$10$6yuUVhn4792F7oXQ2/yDsOgQANSOcST5ADovfi/S8oJUNe1Nd.Yfu');
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `email`, `mobile`, `address`, `password`) VALUES
 (5, 'mouse', 'Shah', 'CSIS', 'dummy@gmail.com', 2147483647, '#211,404 douglas Street\r\n', '$2y$10$3HTjMl7GJs7.OQ4sQ8fY..v96ecTXd.Qlnn42VEfKLPhpNmWUyeem');
-
+INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `email`, `mobile`, `address`, `password`) VALUES
+(6, 'Jackie', 'Zhen', 'jzhen', 'dummy@gmail.com', 2147483647, '#211,404 douglas Street\r\n', '$2y$10$adYFZIR2mkChkRBPHTKdK.vcW2ss5LUXw3BBdse7uXLQePRN5k1WG');
 --
--- insterting some dummy values to have a glance at ui
+-- insterting some dummy photos to have a glance at ui
 --
 
 INSERT INTO `photos` (`id`, `name`, `display_name`, `file_path`, `description`, `user_id`) VALUES
@@ -139,3 +140,10 @@ INSERT INTO `photos` (`id`, `name`, `display_name`, `file_path`, `description`, 
 (46, 'rome.jpeg', 'rome.jpeg', 'inc/data/uploads/rome.jpeg', 'cool Rome demo 1', 5);
 INSERT INTO `photos` (`id`, `name`, `display_name`, `file_path`, `description`, `user_id`) VALUES
 (47, 'taj mahal.jpeg', 'taj mahal.jpeg', 'inc/data/uploads/taj mahal.jpeg', 'cool taj mahal demo 1', 5);
+
+--
+-- Insert admin users
+--
+INSERT INTO `operator` (`user_id`) VALUES (1);
+INSERT INTO `operator` (`user_id`) VALUES (6);
+-
