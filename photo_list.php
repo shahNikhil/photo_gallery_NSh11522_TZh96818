@@ -19,43 +19,20 @@ if(LoginManager::verifyLogin()) {
     PhotoDAO::init();
 
     $u = UserDAO::getUser("".$_SESSION['loggedin']);
-
     $Uid = $u->getId();
-
 
     Page::$subTitle = $u->getFirstName()." ".$u->getLastName()." : My Photos";
     Page::header("PhotoGallery");
-    $photo_list =PhotoDAO::getPhoto($Uid);
     if (isset($_GET["action"]) && $_GET["action"] == "delete")  {
         //Use the DAO to delete the corresponding registration
-        PhotoDAO::deletePhoto($_GET['PhotoID']);
+        PhotoDAO::deletePhoto($_GET['photoID']);
         $photo_list =PhotoDAO::getPhoto($Uid);
-        }
-    if (isset($_GET["action"]) && $_GET["action"] == "edit")  {
-        $newphotodetails = new Photo;
-
-        Page::editPhotoForm($photo_list);
-        if (isset($_POST["action"]) && $_POST["action"] == "edit")  {
-            $newphotodetails->setDisplay_name($_POST['display_name']);
-            $newphotodetails->setDescription($_POST['description']);
-            $newphotodetails->setId($_POST['Photoid']);
-            $photo_list =PhotoDAO::getPhoto($Uid); //get the photos based on the user who signed in
-            PhotoDAO::updatePhoto($newphotodetails);
-        }   
-        if (isset($_POST['submit'])) { 
-            Page::$subTitle="Updated Successfully!";
-            Page::header("PhotoGallery");
-            Page::backToPhotoList();
-        }
-        Page::footer();
+        Page::displayPhotolist($photo_list);
     }
     else{
         //get the photos based on the user who signed in
+        $photo_list =PhotoDAO::getPhoto($Uid);
         Page::displayPhotolist($photo_list);
         Page::footer();
     }
-}else{
-    Page::$subTitle = "Please login first";
-    Page::header("Access Denied");
-    Page::footer();
 }
