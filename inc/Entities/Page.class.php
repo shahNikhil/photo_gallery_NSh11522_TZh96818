@@ -164,7 +164,7 @@ class Page
                     </div>
                     <div class="form-group">
                         <label for="description">Description</label>
-                        <textarea input id="description" name="description" type="text" rows="5" placeholder="Write Something about Your Photo"></textarea>
+                        <textarea input id="description" name="description" type="text" rows="5" placeholder="Write Something about Your photo"></textarea>
                     </div>
 
                     <div class="form-group">
@@ -201,12 +201,12 @@ class Page
                     <div class="col col-md-3"><?php echo $photo->getDescription(); ?></div>
                     <div class="col text-primary">
                         <?php
-                        echo '<a href="' . $_SERVER["PHP_SELF"] . '?action=edit&PhotoID=' . $photo->getId() . '">';
+                        echo '<a href="photo_info.php?action=edit&photoID=' . $photo->getId() . '">';
                         ?>
                         <i class="fa fa-pencil-square-o text-primary" aria-hidden="true"></i> Details</div>
                     <div class="col text-primary">
                         <?php
-                        echo '<a href="' . $_SERVER["PHP_SELF"] . '?action=delete&PhotoID=' . $photo->getId() . '"> ';
+                        echo '<a href="' . $_SERVER["PHP_SELF"] . '?action=delete&photoID=' . $photo->getId() . '"> ';
                         ?>
                         <i class="fa fa-trash text-primary" aria-hidden="true"></i> Delete</div>
                 </div>
@@ -252,53 +252,49 @@ class Page
     <?php
     }
     //this edit the photos of a user who has logged in
-    static function editPhotoForm($Photos)
+    static function editPhotoForm($photo)
     {  ?>
         <!-- Start the page's edit entry form -->
+        <div class="d-flex justify-content-center   ">
+            <div class="img">
+                <img src="<?php echo $photo->getFilepath(); ?>" class="rounded" alt="<?php echo $photo->getDisplay_name()?>">
+            </div>
+            <div class="form">
+                <div class="login-form bg-light border">
+                    <h3 class="text-center text-primary border">Edit photo - <?php echo $photo->getId(); ?></h3>
+                    <form class="text-center" action="" method="post">
+                        <div class="form-group row">
+                            <label class="form-check-label">photo ID</label>
+                            <label class="form-check-label"><?php echo $photo->getId(); ?></label>
+                        </div>
+                        <?php
+                        $display_name = $photo->getDisplay_name();
+                        $description = $photo->getDescription();
+                        ?>
+                        <div class="form-group row">
+                            <label class="form-check-label">Name</label>
+                            <label class="form-check-label">
+                                <input type="text" name="display_name" value="<?php echo $photo->getDisplay_name(); ?>"></label>
+                        </div>
 
-        <div class="login-form bg-light border">
-            <h3 class="text-center text-primary border">Edit Photo - <?php echo $_GET['PhotoID']; ?></h3>
-            <form class="text-center" action="" method="post">
-                <div class="form-group row">
-                    <label class="form-check-label">Photo ID</label>
-                    <label class="form-check-label"><?php echo $_GET['PhotoID']; ?></label>
-                </div>
-                <?php
+                        <div class="form-group row">
+                            <label class="form-check-label">Description</label>
+                            <label class="form-check-label">
+                                <input type="text" name="description" value="<?php echo $photo->getDescription(); ?>"></label>
+                        </div>
 
-                $display_name = "";
-                $description = "";
-                foreach ($Photos as $Photo) {
-                    if ($Photo->getId() == $_GET['PhotoID']) {
-                        $display_name = $Photo->getDisplay_name();
-                        $description = $Photo->getDescription();
-                    }
-                }
-                ?>
-                <div class="form-group row">
-                    <label class="form-check-label">Name</label>
-                    <label class="form-check-label">
-                        <input type="text" name="display_name" value="<?php echo $display_name; ?>"></label>
-                </div>
+                        <input type="hidden" name="photoID" value="<?php echo $photo->getId(); ?>">
 
-                <div class="form-group row">
-                    <label class="form-check-label">Description</label>
-                    <label class="form-check-label">
-                        <input type="text" name="description" value="<?php echo $description; ?>"></label>
-                </div>
-
-
-                <!-- We need another hidden input for Photo id here. Why? -->
-                <input type="hidden" name="Photoid" value="<?php echo $_GET['PhotoID']; ?>">
-
-                <!-- Use input type hidden to let us know that this action is to edit -->
-                <input type="hidden" name="action" value="edit">
-                <input type="submit" name="submit" class="button " value="Edit Photo">
-            </form>
+                        <!-- Use input type hidden to let us know that this action is to edit -->
+                        <input type="hidden" name="action" value="edit">
+                        <input type="submit" name="submit" class="button " value="Edit Photo">
+                    </form>
+                </div>            
+            </div>
         </div>
-
 <?php }
  //this method display all the photo to admin uploaded by users
- static function displayPhotoGrid($users){
+ static function displayphotoGrid($users){
 ?>
 <div class="container">
     <h1>Public Gallery :</h1>   
