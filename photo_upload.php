@@ -10,10 +10,16 @@ require_once("inc/Utilities/LoginManager.class.php");
 require_once("inc/Utilities/PDOAgent.class.php");
 require_once("inc/Utilities/UserDAO.class.php");
 
-Page::$subTitle = "Upload your photo and write a short description on it here";
-Page::header("PhotoGallery");
+session_start();
+if(isset($_SESSION) && isset($_SESSION["loggedin"])) {
+    Page::$subTitle = "Upload your photo and write a short description on it here";
+    Page::header("PhotoGallery");
+    Page::Uploadphoto();
+    Page::footer();
+}else{
+    Page::$subTitle = "Please login first";
+    Page::header("Access Denied");
+    Page::footer();
+}
 
-Page::Uploadphoto();
-
-Page::footer();
 ?>

@@ -11,7 +11,7 @@ require_once("inc/Utilities/AdminDAO.class.php");
 
 require_once("inc/Utilities/LoginManager.class.php");
 
-
+if(isset($_SESSION) && isset($_SESSION["loggedin"])) {
     if((isset($_POST['Register'])) && !empty($_POST)) {	
         // If the form entries are valid
         $error = Validate::validateInput();
@@ -52,6 +52,11 @@ require_once("inc/Utilities/LoginManager.class.php");
             <input type="button" value="Go back!" onclick="history.back()">
            </form>';
         }   
-    }        
+    }    
+}else{
+    Page::$subTitle = "Please login first";
+    Page::header("Access Denied");
+    Page::footer();
+}    
     
 ?>
