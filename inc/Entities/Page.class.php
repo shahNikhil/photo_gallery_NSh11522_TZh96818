@@ -186,7 +186,7 @@ class Page
                         <button type="submit" class="btn btn-primary btn-block" name="Registerphoto">GO!!!</button>
                     </div>
                     <div class="form-group">
-                        <p><strong>Note:</strong> Only .jpg, .jpeg, .gif, .png formats allowed to a max size of 5 MB.</p>
+                        <p><strong>Note:</strong> Only .jpg, .jpeg, .gif, .png formats allowed to a max size of 25 MB.</p>
                     </div>
                 </section>
             </form>
