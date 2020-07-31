@@ -269,11 +269,11 @@ class Page
     static function editPhotoForm($photo)
     {  ?>
         <!-- Start the page's edit entry form -->
-        <div class="d-flex justify-content-center   ">
-            <div class="img">
-                <img src="<?php echo $photo->getFilepath(); ?>" class="rounded" alt="<?php echo $photo->getDisplay_name()?>">
+        <div class="d-flex justify-content-center ">
+            <div class="img mr-3">
+                <img src="<?php echo $photo->getFilepath(); ?>" class="img-thumbnail" alt="<?php echo $photo->getDisplay_name()?>">
             </div>
-            <div class="form">
+            <div class="form mr-3">
                 <div class="login-form bg-light border">
                     <h3 class="text-center text-primary border">Edit photo - <?php echo $photo->getId(); ?></h3>
                     <form class="text-center" action="" method="post">
