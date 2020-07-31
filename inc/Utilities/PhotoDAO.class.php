@@ -102,12 +102,11 @@ static function deletePhoto($pid){
         self::$db->execute();
 
         if(self::$db->rowCount() != 1){
-            throw new Exception("Problem in deleting reservation $pid");
+            throw new Exception("Problem in deleting registration $pid");
         }
     }
     catch(Exception $e){
         echo $e->getMessage();
-        self::$db->debugDumpParams();
         return false;
     }
 
@@ -126,7 +125,7 @@ static function deleteUserPhoto( $uid){
         self::$db->execute();
 
         if(self::$db->rowCount() != 1){
-            throw new Exception("Problem in deleting reservation $uid");
+            throw new Exception("Problem in deleting registration $uid");
         }
     }
     catch(Exception $e){

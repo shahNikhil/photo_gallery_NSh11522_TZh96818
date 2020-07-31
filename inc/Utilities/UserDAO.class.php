@@ -92,7 +92,7 @@ class UserDAO {
             self::$db->execute();
     
             if(self::$db->rowCount() != 1){
-                throw new Exception("Problem in deleting reservation $userid");
+                throw new Exception("Problem in deleting registration $userid");
             }
         }
         catch(Exception $e){
