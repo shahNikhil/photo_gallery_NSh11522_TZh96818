@@ -16,9 +16,10 @@ class PhotoDAO {
         $file_path = $photo->getFilepath();
         $descriptoin = $photo->getDescription();
         $user_id = $photo->getUser_id();
+        $display_name = $photo->getDisplay_name();
         // query
-        $sqlInsert = "INSERT INTO photos (name, file_path, description, user_id) 
-        VALUES ('$name', '$file_path', '$descriptoin', '$user_id')";
+        $sqlInsert = "INSERT INTO photos (name, display_name, file_path, description, user_id) 
+        VALUES ('$name', '$display_name', '$file_path', '$descriptoin', '$user_id')";
         // bind
         self::$db->query($sqlInsert);
 
@@ -39,12 +40,12 @@ class PhotoDAO {
     }
 
     static function getPhotoByID(string $pID) {
-        $sql = "SELECT * FROM photos WHERE user_id=:pID";
+        $sql = "SELECT * FROM photos WHERE id=:pID";
         self::$db->query($sql);
         self::$db->bind(":pID",intval($pID));
         self::$db->execute();
         
-        return self::$db->getResultSet();        
+        return self::$db->singleResult();        
     }
 
     static function getPhotos() {
