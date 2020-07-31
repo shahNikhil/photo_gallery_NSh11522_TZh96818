@@ -18,21 +18,22 @@ class LoginManager  {
             return true;
 
         } else {
-        // Else
-            //The user is not logged in
-            //Destroy any session just in case            
+       
             session_destroy();
 
             //Send them back to the login pages using header
-            header("Location: ../../login.php");
+            header("Location: login.php");
 
             //return false
             return false;
 
-        // End else
         }
     }
         
+    static function destroy_session(){
+        unset($_SESSION["loggedin"]);
+        session_destroy();
+    }
     
 }
 
